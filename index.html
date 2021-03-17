@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link href= "styles/main.css" rel="stylesheet" type="text/css">
+	<link type="image/x-icon" rel="icon" href="media/icon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="styles/javascript.js"></script>
+	<meta name="viewport" content="width=device-width">
+	<title> Jan Paint </title>
+</head>
+
+<body>
+
+<!-- The header, containing the navigation bar.-->
+<header>
+	<nav class="navbar">
+    <a href="index.html">
+		<img src="media/icon+branding.png" alt="Website Logo">
+    </a>
+		<a href="index.html#anchor">Collection</a>
+		<a href="FAQ.html">FAQ</a>
+	</nav>	
+</header>
+
+
+<section id="musicbutton">
+		<h1> <button onclick="play()">Play Music</button> </h1>
+		<span class="centertext">Enhance your viewing experience with music by clicking the "Play Music" text above! <br> Credit to orginal artist: <a href="https://musicbrainz.org/recording/bc2e2d7f-d1c3-4b69-bc5c-155adf494673">Musopen String Quartet</a></span>
+</section>
+
+
+
+<article>
+
+<div class="dividerline"> </div>
+
+<div id="anchor"></div>
+
+<!-- Collection of art pieces, different div elements scale together and lines up together.-->
+<h1 class="centertext">Collection</h1>
+
+<div class="collection">
+  <div class="gallery">
+    <a href="artwork1.html">
+      <img src="media/artwork1.png" alt="Blured Cracks">
+    </a>
+<div class="desc"><strong>"Blured Cracks"</strong></div>
+  </div>
+</div>
+
+
+<div class="collection">
+  <div class="gallery">
+    <a href="artwork2.html">
+      <img src="media/artwork2.png" alt="The Civilingenjör">
+    </a>
+    <div class="desc"><strong>"Hard working man"</strong></div>
+  </div>
+</div>
+
+<div class="collection">
+  <div class="gallery">
+    <a href="artwork3.html">
+      <img src="media/artwork3.png" alt="All roads lead to a face">
+    </a>
+    <div class="desc"><strong>"All Roads Lead to a Face"</strong></div>
+  </div>
+</div>
+
+<div class="collection">
+  <div class="gallery">
+    <a href="artwork4.html">
+      <img src="media/artwork4.png" alt="smile">
+    </a>
+    <div class="desc"><strong>"Smile :)"</strong></div>
+  </div>
+</div>
+
+<div class="space"></div>
+
+<!-- Audio element for playing the music, connected with the button element at the beginning of page. Flac music for the browsers that support it, mp3 for the browsers that doesn't support it. -->
+<div id="audio">
+<audio id="my-audio" controls>
+  <source src="https://ia800307.us.archive.org/34/items/MusopenCollectionAsFlac/Dvorak_StringQuartetNo.12inFMajorOp.96/AntonnDvorak-StringQuartetNo.12InFMajorOp.96American-02-Lento.flac" type="audio/flac">   
+  <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Dee_Yan-Key/ELEGIAC_SYMPHONY/Dee_Yan-Key_-_02_-_Metamorphosis__The_Peacock.mp3" type="audio/mp3">
+    Your browser does not support flac and mp3.
+</audio>
+</div>
+
+</article>
+
+
+<!-- Footer, last element on page.-->
+<footer class="centertext"> Copyright Johannes 2019 </footer>
+
+
+</body>
+</html>
+
